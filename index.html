@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <title>Mi Proyecto en Heroku</title>
+</head>
+<body>
+ <h1 id="mensaje">Hola, Heroku!</h1>
+ <button id="boton">Haz clic aquí</button>
+ <script>
+    document.getElementById('boton').addEventListener('click', function() {
+    document.getElementById('mensaje').innerText = 'Botón clicado!';
+ });
+ </script>
+</body>
+</html>
