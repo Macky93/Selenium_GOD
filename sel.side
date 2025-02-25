@@ -1,0 +1,48 @@
+{
+  "id": "1a401506-1b6d-4652-ad83-e133a5edea5c",
+  "version": "2.0",
+  "name": "sel",
+  "url": "http://localhost",
+  "tests": [{
+    "id": "cb78996c-2ab6-4828-90a5-bbf67af4ae92",
+    "name": "una vez",
+    "commands": [{
+      "id": "e9d77b9e-792d-4625-b227-09fab3b5399b",
+      "comment": "",
+      "command": "open",
+      "target": "/selenium/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "5e9c5208-7e45-473a-9d48-c774b1a2ec0a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "945x1040",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "043a7fc3-6d7c-48cb-b8b2-c30415733346",
+      "comment": "",
+      "command": "click",
+      "target": "id=boton",
+      "targets": [
+        ["id=boton", "id"],
+        ["css=#boton", "css:finder"],
+        ["xpath=//button[@id='boton']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Haz clic aquí')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "d7a4d82f-3589-4841-9e52-ead251356706",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["cb78996c-2ab6-4828-90a5-bbf67af4ae92"]
+  }],
+  "urls": ["http://localhost/"],
+  "plugins": []
+}
